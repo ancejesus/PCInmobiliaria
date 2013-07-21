@@ -88,6 +88,7 @@
             <select id="brcateg"
             <option>Venta</option>
             <option>Renta</option>
+            <option>Donación</option>
             </select>
             </li>
             
@@ -96,10 +97,12 @@
             <option>Sur</option>
             <option>Norte </option>
             <option>Noreste </option>
+            <option>Norponiente </option>
             <option>Sureste </option>
             <option>Poniente </option>
             </select>
             </li>
+            </ul>
 	</div>
 	<div data-role="footer" data-position="fixed">
 		 <div data-role="navbar" data-iconpos="left">
@@ -125,7 +128,7 @@
 
 <div data-role="page" id="serv">
 	<div data-role="header">
-		<h1>Página dos</h1>
+		<h1>Servicios a Contratar</h1>
 	</div>
 	<div data-role="content">	
 		Acá van todos los servicios que pueden obterner al afiliarse a Inmobiliaria PC		
@@ -157,7 +160,44 @@
 		<h1>Búsqueda de Inmuebles en Renta</h1>
 	</div>
 	<div data-role="content">	
-		Contenido de busqueda inmuebles en Renta		
+			<ul data-role="listview" data-inset="true" data-dividertheme="a">
+            <li data-role="list-divider">Datos de la Búsqueda </li>
+            <li>Tipo de Inmueble:
+            <select id="renInmue"
+            <option>Departamento</option>
+            <option>Departamento Amueblado</option>
+            <option>Casa Sola</option>
+            <option>Casa para Oficinas</option>
+            <option>Pension</option>
+            <option>Local Comercial</option>
+            <option>Oficinas</option>
+            <option>Nave</option>
+            <option>Terreno</option>
+            </select>
+            </li>
+            
+            <li>Costo de Renta:
+            <select id="renCosto"
+            <option>Menos de 2,000.00 Pesos</option>
+            <option>Entre 2,000.00 y 3,000.00Pesos</option>
+            <option>Entre 3,500.00 y 5,000.00 Pesos</option>
+            <option>Entre 5,500.00 y 9,000.00 Pesos</option>
+            <option>Entre 9,500.00 y 15,000.00 Pesos</option>
+            <option>Más de 15,000.00 Pesos</option>
+            </select>
+            </li>
+            
+            <li>Geolocalización:
+            <select id="renGeolo"
+            <option>Sur</option>
+            <option>Norte </option>
+            <option>Noreste </option>
+            <option>Norponiente </option>
+            <option>Sureste </option>
+            <option>Poniente </option>
+            </select>
+            </li>
+            </ul>	
 	</div>
 	<div data-role="footer" data-position="fixed">
 		<div data-role="navbar" data-iconpos="left">
@@ -168,8 +208,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#serv" data-transition="flip" data-theme="" data-icon="star">
-                        Servicios
+                    <a href="#serv" data-transition="flip" data-theme="" data-icon="search">
+                        Buscar
                     </a>
                 </li>
             </ul>
@@ -182,10 +222,50 @@
 
 <div data-role="page" id="pgvta">
 	<div data-role="header">
-		<h1>úsqueda de Inmuebles en Venta</h1>
+		<h1>Búsqueda de Inmuebles en Venta</h1>
 	</div>
 	<div data-role="content">	
-		Contenido de busqueda inmuebles en Venta		
+		
+        <ul data-role="listview" data-inset="true" data-dividertheme="a">
+            <li data-role="list-divider">Datos de la Búsqueda </li>
+            <li>Tipo de Inmueble:
+            <select id="vtaInmue"
+            <option>Departamento</option>
+            <option>Departamento Amueblado</option>
+            <option>Casa Sola</option>
+            <option>Casa para Oficinas</option>
+            <option>Pension</option>
+            <option>Local Comercial</option>
+            <option>Oficinas</option>
+            <option>Nave</option>
+            <option>Terreno</option>
+            </select>
+            </li>
+            
+            <li>Costo de Venta:
+            <select id="vtaCosto"
+            <option>Menor de 150,000.00 Pesos</option>
+            <option>Entre 200,000.00 y 300,000.00Pesos</option>
+            <option>Entre 350,000.00 y 500,000.00 Pesos</option>
+            <option>Entre 550,000.00 y 900,000.00 Pesos</option>
+            <option>Entre 950,000.00 y 1,500,000.00 Pesos</option>
+            <option>Más de 2,000,000.00 Pesos</option>
+            </select>
+            </li>
+            
+            <li>Geolocalización:
+            <select id="vtaGeolo"
+            <option>Sur</option>
+            <option>Norte </option>
+            <option>Noreste </option>
+            <option>Norponiente </option>
+            <option>Sureste </option>
+            <option>Poniente </option>
+            </select>
+            </li>
+            </ul>	
+        
+        		
 	</div>
 	<div data-role="footer" data-position="fixed">
 		<div data-role="navbar" data-iconpos="left">
@@ -196,8 +276,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#serv" data-transition="flip" data-theme="" data-icon="star">
-                        Servicios
+                    <a href="#serv" data-transition="flip" data-theme="" data-icon="search">
+                        Buscar
                     </a>
                 </li>
             </ul>
