@@ -1,0 +1,267 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Inmobiliaria PC</title>
+<link href="css/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="css/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="phonegap.js"></script>
+<script src="js/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="js/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="inicio">
+	<div data-role="header">
+		<h1>Inmobiliaria PC</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#brapida" data-transition="pop">Búsqueda Rápida </a></li>
+            <li><a href="#pgren" data-transition="fade">Renta</a></li>
+			<li><a href="#pgvta" data-transition="fade">Venta</a></li>
+            <li><a href="#boletin" data-transition="fade">Inscribete a nuestro boletín</a></li>
+            <li><a href="#serv" data-transition="pop">Servicios</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer" style="text-align:center; padding:10px 0;" data-position="fixed">		
+        <a data-role="button" data-transition="slideup" data-theme="a" href="#nosotros"
+        data-icon="info" data-iconpos="left" class="ui-btn-left">Acerca de...</a>
+        <span style="font-size:8px;">Todos los derechos reservados &copy; </span>
+        
+	</div>
+</div>
+
+
+
+
+<div data-role="page" id="nosotros">
+	<div data-role="header">
+		<h1>Acerca de Inmobiliaria PC</h1>
+	</div>
+	<div data-role="content">	
+		Acá va a ir todo el contenido acerca de la empresa		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		 <div data-role="navbar" data-iconpos="left">
+            <ul>
+                <li>
+                    <a href="#" data-rel="back" data-transition="slideup" data-theme="" data-icon="home">
+                        Regresar
+                    </a>
+                </li>
+                <li>
+                    <a href="#brapida" data-transition="pop" data-theme="" data-icon="search">
+                        Búsqueda Rápida
+                    </a>
+                </li>
+            </ul>
+        </div>
+	</div>
+</div>
+
+
+
+
+<div data-role="page" id="brapida">
+	<div data-role="header">
+		<h1>Búsqueda rápida de Inmuebles</h1>
+	</div>
+	<div data-role="content">	
+			<ul data-role="listview" data-inset="true" data-dividertheme="a">
+            <li data-role="list-divider">Datos de la Búsqueda </li>
+            <li>Tipo de Inmueble:
+            <select id="brinmu"
+            <option>Departamento</option>
+            <option>Departamento Amueblado</option>
+            <option>Casa Sola</option>
+            <option>Casa para Oficinas</option>
+            <option>Pension</option>
+            <option>Local Comercial</option>
+            <option>Oficinas</option>
+            <option>Nave</option>
+            <option>Terreno</option>
+            </select>
+            </li>
+            
+            <li>Categoría:
+            <select id="brcateg"
+            <option>Venta</option>
+            <option>Renta</option>
+            </select>
+            </li>
+            
+            <li>Geolocalización:
+            <select id="brgeo"
+            <option>Sur</option>
+            <option>Norte </option>
+            <option>Noreste </option>
+            <option>Sureste </option>
+            <option>Poniente </option>
+            </select>
+            </li>
+	</div>
+	<div data-role="footer" data-position="fixed">
+		 <div data-role="navbar" data-iconpos="left">
+            <ul>
+                <li>
+                    <a href="#inicio" data-transition="pop" data-theme="" data-icon="delete">
+                        Cancelar
+                    </a>
+                </li>
+                <li>
+                    <a href="#page1" data-transition="pop" data-theme="" data-icon="arrow-r">
+                        Siguiente
+                    </a>
+                </li>
+            </ul>
+        </div>
+	</div>
+</div>
+
+
+
+
+
+<div data-role="page" id="serv">
+	<div data-role="header">
+		<h1>Página dos</h1>
+	</div>
+	<div data-role="content">	
+		Acá van todos los servicios que pueden obterner al afiliarse a Inmobiliaria PC		
+	</div>
+	<div data-role="footer" data-position="fixed">
+	 <div data-role="navbar" data-iconpos="left">
+            <ul>
+                <li>
+                    <a href="#" data-rel="back" data-transition="slideup" data-theme="" data-icon="home">
+                        Regresar
+                    </a>
+                </li>
+                <li>
+                    <a href="#brapida" data-transition="pop" data-theme="" data-icon="search">
+                        Búsqueda Rápida
+                    </a>
+                </li>
+            </ul>
+        </div>
+	</div>
+</div>
+
+
+
+
+
+<div data-role="page" id="pgren">
+	<div data-role="header">
+		<h1>Búsqueda de Inmuebles en Renta</h1>
+	</div>
+	<div data-role="content">	
+		Contenido de busqueda inmuebles en Renta		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar" data-iconpos="left">
+            <ul>
+                <li>
+                    <a href="#" data-rel="back" data-transition="flip" data-theme="" data-icon="delete">
+                        Cancelar
+                    </a>
+                </li>
+                <li>
+                    <a href="#serv" data-transition="flip" data-theme="" data-icon="star">
+                        Servicios
+                    </a>
+                </li>
+            </ul>
+        </div>
+	</div>
+</div>
+
+
+
+
+<div data-role="page" id="pgvta">
+	<div data-role="header">
+		<h1>úsqueda de Inmuebles en Venta</h1>
+	</div>
+	<div data-role="content">	
+		Contenido de busqueda inmuebles en Venta		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar" data-iconpos="left">
+            <ul>
+                <li>
+                    <a href="#" data-rel="back" data-transition="flip" data-theme="" data-icon="delete">
+                        Cancelar
+                    </a>
+                </li>
+                <li>
+                    <a href="#serv" data-transition="flip" data-theme="" data-icon="star">
+                        Servicios
+                    </a>
+                </li>
+            </ul>
+        </div>
+	</div>
+</div>
+
+
+
+
+<div data-role="page" id="boletin">
+	<div data-role="header">
+		<h1>Inscríbete a nuestro boletín mensual</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview" data-dividertheme="a">
+        <li data-role="list-divider">Datos de Registro</li>
+        <li>
+        <input type="text" placeholder="Nombre Completo" id="regNom"/>
+        </li>
+        <li>
+        <input type="text" placeholder="Ciudad" id="regCd"/>
+        </li>
+        <li>
+        <input type="email" placeholder="cuenta@dominio.com" id="regEmail"/>
+        </li>
+        <li>
+        <input type="tel" placeholder="Teléfono o Móvil" id="regTel"/>
+        </li>
+        </ul>
+        <div id="mostrar" style="width:200px"></div>
+	</div>
+	<div data-role="footer" data-position="fixed">
+	<div data-role="navbar" data-iconpos="left">
+            <ul>
+                <li>
+                    <a href="#inicio" data-transition="flip" data-theme="" data-icon="delete">
+                        Cancelar
+                    </a>
+                </li>
+                <li>
+                    <a id="regSend" href="#" data-transition="flip" data-theme="" data-icon="info">Registrar</a>
+                </li>
+            </ul>
+        </div>
+	</div>
+</div>
+
+
+
+
+
+
+<div data-role="page" id="page2">
+	<div data-role="header">
+		<h1>Página dos</h1>
+	</div>
+	<div data-role="content">	
+		Contenido		
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+</body>
+</html>
